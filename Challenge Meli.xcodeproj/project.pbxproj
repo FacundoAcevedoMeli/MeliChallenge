@@ -1,0 +1,1522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E41765105066C16D3CAB8C1 /* Pods_Challenge_Meli.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209486490507F2E7E4AE4389 /* Pods_Challenge_Meli.framework */; };
+		794530E128D9EF3D00EF3462 /* MeliLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794530E028D9EF3D00EF3462 /* MeliLabel.swift */; };
+		794530E328D9FD1E00EF3462 /* MeliButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794530E228D9FD1E00EF3462 /* MeliButton.swift */; };
+		794530E628DB887300EF3462 /* GenericTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794530E528DB887300EF3462 /* GenericTableCell.swift */; };
+		794530E828DBA44600EF3462 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794530E728DBA44600EF3462 /* UITableView+Extension.swift */; };
+		794530E928DC39D700EF3462 /* MyLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE560B28D0914B0052C819 /* MyLocationView.swift */; };
+		794530EA28DC39F000EF3462 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE560D28D091CA0052C819 /* UIView+Extension.swift */; };
+		794530EB28DC39F300EF3462 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE560528D08A750052C819 /* UIColor+Extension.swift */; };
+		794530EC28DC39FB00EF3462 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE564C28D7E4930052C819 /* UIImageView+Extension.swift */; };
+		794530ED28DC3A0000EF3462 /* GenericTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794530E528DB887300EF3462 /* GenericTableCell.swift */; };
+		794530EE28DC3A0300EF3462 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794530E728DBA44600EF3462 /* UITableView+Extension.swift */; };
+		794530EF28DC3A0700EF3462 /* MeliButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794530E228D9FD1E00EF3462 /* MeliButton.swift */; };
+		794530F028DC3A0D00EF3462 /* MeliLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794530E028D9EF3D00EF3462 /* MeliLabel.swift */; };
+		794530F128DC3A1500EF3462 /* MeliTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE564E28D7E67E0052C819 /* MeliTableView.swift */; };
+		794530F228DC3A1600EF3462 /* MeliTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE564E28D7E67E0052C819 /* MeliTableView.swift */; };
+		794530F328DC3A1A00EF3462 /* MyLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE560B28D0914B0052C819 /* MyLocationView.swift */; };
+		794530F428DC3A2F00EF3462 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE563D28D7C87B0052C819 /* Category.swift */; };
+		794530F528DC3A3200EF3462 /* TopProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE564428D7D80D0052C819 /* TopProductResponse.swift */; };
+		794530F628DC3A3500EF3462 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE564628D7DCC00052C819 /* Product.swift */; };
+		794530F728DC3AC100EF3462 /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE564828D7DD2D0052C819 /* MediaItem.swift */; };
+		794530F828DC3BF000EF3462 /* Request+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE563B28D7C6B50052C819 /* Request+Category.swift */; };
+		794530F928DC3BF300EF3462 /* Request+Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE564228D7D47D0052C819 /* Request+Product.swift */; };
+		794530FA28DC3BF600EF3462 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE563728D7C6920052C819 /* CategoryRepository.swift */; };
+		794530FB28DC3BF900EF3462 /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE563928D7C69C0052C819 /* ProductRepository.swift */; };
+		794530FC28DC3BFB00EF3462 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE562E28D7C5820052C819 /* APIManager.swift */; };
+		794530FD28DC3BFE00EF3462 /* RequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE563028D7C59C0052C819 /* RequestData.swift */; };
+		794530FE28DC3C0100EF3462 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE563228D7C5B20052C819 /* Request.swift */; };
+		794530FF28DC3C0600EF3462 /* MultiGetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE564A28D7DD640052C819 /* MultiGetResponse.swift */; };
+		7945310028DC3C1D00EF3462 /* MediaItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE562A28D7B3D70052C819 /* MediaItemCollectionViewCell.swift */; };
+		7945310128DC3C2C00EF3462 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE562428D7AE010052C819 /* DetailViewController.swift */; };
+		7945310228DC3C2F00EF3462 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE564028D7CA2C0052C819 /* ProductListViewModel.swift */; };
+		7945310328DC3C5200EF3462 /* HeaderDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE562728D7AEED0052C819 /* HeaderDescriptionTableViewCell.swift */; };
+		7945310428DC3C6000EF3462 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE561E28D4F2D40052C819 /* ProductListViewController.swift */; };
+		7945310528DC3C6200EF3462 /* ProductItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE562128D4F3830052C819 /* ProductItemTableViewCell.swift */; };
+		7945310628DC3C6700EF3462 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE560128D08A460052C819 /* HomeViewController.swift */; };
+		7945310728DC3C6900EF3462 /* HomeTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE55FD28D08A140052C819 /* HomeTabController.swift */; };
+		7945310A28DC3C8F00EF3462 /* HeaderHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE561028D097EA0052C819 /* HeaderHomeTableViewCell.swift */; };
+		7945310B28DC3C9200EF3462 /* DetailShippingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE561228D0A2510052C819 /* DetailShippingTableViewCell.swift */; };
+		7945310C28DC3C9400EF3462 /* CategorySuggestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE561428D0ACD70052C819 /* CategorySuggestTableViewCell.swift */; };
+		7945310D28DC3C9800EF3462 /* CategorySuggestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE561728D0AE980052C819 /* CategorySuggestCollectionViewCell.swift */; };
+		7945310E28DC3CAB00EF3462 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE560828D08DB40052C819 /* FavoritesViewController.swift */; };
+		7945311F28DC3D9D00EF3462 /* MeliTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945311E28DC3D9D00EF3462 /* MeliTest.swift */; };
+		7945312028DC3DC900EF3462 /* HomeTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE55FD28D08A140052C819 /* HomeTabController.swift */; };
+		7945312128DC3DD900EF3462 /* MeliNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE562C28D7B5F50052C819 /* MeliNavigationBar.swift */; };
+		7945312328DC43D000EF3462 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945312228DC43D000EF3462 /* UIButton+Extension.swift */; };
+		7945312628DC490F00EF3462 /* AdSelectableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945312528DC490F00EF3462 /* AdSelectableTableViewCell.swift */; };
+		7945312928DC4A3C00EF3462 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945312828DC4A3C00EF3462 /* ProfileViewController.swift */; };
+		7945312C28DC4B0200EF3462 /* ProfileOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945312B28DC4B0200EF3462 /* ProfileOptionTableViewCell.swift */; };
+		7945312F28DC4D7C00EF3462 /* ProfileHheaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945312E28DC4D7C00EF3462 /* ProfileHheaderView.swift */; };
+		7945313228DC50B400EF3462 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945313128DC50B400EF3462 /* FavoriteViewModel.swift */; };
+		795EF64428DC8CE000617B62 /* StockInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795EF64328DC8CE000617B62 /* StockInfoTableViewCell.swift */; };
+		79DE55C628D081FE0052C819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE55C528D081FE0052C819 /* AppDelegate.swift */; };
+		79DE55C828D081FE0052C819 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE55C728D081FE0052C819 /* SceneDelegate.swift */; };
+		79DE55CF28D081FF0052C819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79DE55CE28D081FF0052C819 /* Assets.xcassets */; };
+		79DE55D228D081FF0052C819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79DE55D028D081FF0052C819 /* LaunchScreen.storyboard */; };
+		79DE55E728D081FF0052C819 /* Challenge_MeliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE55E628D081FF0052C819 /* Challenge_MeliUITests.swift */; };
+		79DE55E928D081FF0052C819 /* Challenge_MeliUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE55E828D081FF0052C819 /* Challenge_MeliUITestsLaunchTests.swift */; };
+		79DE55FE28D08A140052C819 /* HomeTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE55FD28D08A140052C819 /* HomeTabController.swift */; };
+		79DE560228D08A460052C819 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE560128D08A460052C819 /* HomeViewController.swift */; };
+		79DE560628D08A750052C819 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE560528D08A750052C819 /* UIColor+Extension.swift */; };
+		79DE560928D08DB40052C819 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE560828D08DB40052C819 /* FavoritesViewController.swift */; };
+		79DE560C28D0914B0052C819 /* MyLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE560B28D0914B0052C819 /* MyLocationView.swift */; };
+		79DE560E28D091CA0052C819 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE560D28D091CA0052C819 /* UIView+Extension.swift */; };
+		79DE561128D097EA0052C819 /* HeaderHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE561028D097EA0052C819 /* HeaderHomeTableViewCell.swift */; };
+		79DE561328D0A2510052C819 /* DetailShippingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE561228D0A2510052C819 /* DetailShippingTableViewCell.swift */; };
+		79DE561528D0ACD70052C819 /* CategorySuggestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE561428D0ACD70052C819 /* CategorySuggestTableViewCell.swift */; };
+		79DE561828D0AE980052C819 /* CategorySuggestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE561728D0AE980052C819 /* CategorySuggestCollectionViewCell.swift */; };
+		79DE561F28D4F2D40052C819 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE561E28D4F2D40052C819 /* ProductListViewController.swift */; };
+		79DE562228D4F3830052C819 /* ProductItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE562128D4F3830052C819 /* ProductItemTableViewCell.swift */; };
+		79DE562528D7AE010052C819 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE562428D7AE010052C819 /* DetailViewController.swift */; };
+		79DE562828D7AEED0052C819 /* HeaderDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE562728D7AEED0052C819 /* HeaderDescriptionTableViewCell.swift */; };
+		79DE562B28D7B3D70052C819 /* MediaItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE562A28D7B3D70052C819 /* MediaItemCollectionViewCell.swift */; };
+		79DE562D28D7B5F50052C819 /* MeliNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE562C28D7B5F50052C819 /* MeliNavigationBar.swift */; };
+		79DE562F28D7C5820052C819 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE562E28D7C5820052C819 /* APIManager.swift */; };
+		79DE563128D7C59C0052C819 /* RequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE563028D7C59C0052C819 /* RequestData.swift */; };
+		79DE563328D7C5B20052C819 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE563228D7C5B20052C819 /* Request.swift */; };
+		79DE563828D7C6920052C819 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE563728D7C6920052C819 /* CategoryRepository.swift */; };
+		79DE563A28D7C69C0052C819 /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE563928D7C69C0052C819 /* ProductRepository.swift */; };
+		79DE563C28D7C6B50052C819 /* Request+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE563B28D7C6B50052C819 /* Request+Category.swift */; };
+		79DE563E28D7C87B0052C819 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE563D28D7C87B0052C819 /* Category.swift */; };
+		79DE564128D7CA2C0052C819 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE564028D7CA2C0052C819 /* ProductListViewModel.swift */; };
+		79DE564328D7D47D0052C819 /* Request+Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE564228D7D47D0052C819 /* Request+Product.swift */; };
+		79DE564528D7D80D0052C819 /* TopProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE564428D7D80D0052C819 /* TopProductResponse.swift */; };
+		79DE564728D7DCC00052C819 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE564628D7DCC00052C819 /* Product.swift */; };
+		79DE564928D7DD2D0052C819 /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE564828D7DD2D0052C819 /* MediaItem.swift */; };
+		79DE564B28D7DD640052C819 /* MultiGetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE564A28D7DD640052C819 /* MultiGetResponse.swift */; };
+		79DE564D28D7E4930052C819 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE564C28D7E4930052C819 /* UIImageView+Extension.swift */; };
+		79DE564F28D7E67E0052C819 /* MeliTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE564E28D7E67E0052C819 /* MeliTableView.swift */; };
+		79DE566328D7F0B20052C819 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565128D7F0B20052C819 /* Montserrat-ExtraBold.ttf */; };
+		79DE566428D7F0B20052C819 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565128D7F0B20052C819 /* Montserrat-ExtraBold.ttf */; };
+		79DE566528D7F0B20052C819 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565128D7F0B20052C819 /* Montserrat-ExtraBold.ttf */; };
+		79DE566628D7F0B20052C819 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565228D7F0B20052C819 /* Montserrat-ExtraLightItalic.ttf */; };
+		79DE566728D7F0B20052C819 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565228D7F0B20052C819 /* Montserrat-ExtraLightItalic.ttf */; };
+		79DE566828D7F0B20052C819 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565228D7F0B20052C819 /* Montserrat-ExtraLightItalic.ttf */; };
+		79DE566928D7F0B20052C819 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565328D7F0B20052C819 /* Montserrat-SemiBoldItalic.ttf */; };
+		79DE566A28D7F0B20052C819 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565328D7F0B20052C819 /* Montserrat-SemiBoldItalic.ttf */; };
+		79DE566B28D7F0B20052C819 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565328D7F0B20052C819 /* Montserrat-SemiBoldItalic.ttf */; };
+		79DE566C28D7F0B20052C819 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565428D7F0B20052C819 /* Montserrat-Thin.ttf */; };
+		79DE566D28D7F0B20052C819 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565428D7F0B20052C819 /* Montserrat-Thin.ttf */; };
+		79DE566E28D7F0B20052C819 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565428D7F0B20052C819 /* Montserrat-Thin.ttf */; };
+		79DE566F28D7F0B20052C819 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565528D7F0B20052C819 /* Montserrat-Black.ttf */; };
+		79DE567028D7F0B20052C819 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565528D7F0B20052C819 /* Montserrat-Black.ttf */; };
+		79DE567128D7F0B20052C819 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565528D7F0B20052C819 /* Montserrat-Black.ttf */; };
+		79DE567228D7F0B20052C819 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565628D7F0B20052C819 /* Montserrat-ExtraLight.ttf */; };
+		79DE567328D7F0B20052C819 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565628D7F0B20052C819 /* Montserrat-ExtraLight.ttf */; };
+		79DE567428D7F0B20052C819 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565628D7F0B20052C819 /* Montserrat-ExtraLight.ttf */; };
+		79DE567528D7F0B20052C819 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565728D7F0B20052C819 /* Montserrat-Light.ttf */; };
+		79DE567628D7F0B20052C819 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565728D7F0B20052C819 /* Montserrat-Light.ttf */; };
+		79DE567728D7F0B20052C819 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565728D7F0B20052C819 /* Montserrat-Light.ttf */; };
+		79DE567828D7F0B20052C819 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565828D7F0B20052C819 /* Montserrat-BoldItalic.ttf */; };
+		79DE567928D7F0B20052C819 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565828D7F0B20052C819 /* Montserrat-BoldItalic.ttf */; };
+		79DE567A28D7F0B20052C819 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565828D7F0B20052C819 /* Montserrat-BoldItalic.ttf */; };
+		79DE567B28D7F0B20052C819 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565928D7F0B20052C819 /* Montserrat-ThinItalic.ttf */; };
+		79DE567C28D7F0B20052C819 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565928D7F0B20052C819 /* Montserrat-ThinItalic.ttf */; };
+		79DE567D28D7F0B20052C819 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565928D7F0B20052C819 /* Montserrat-ThinItalic.ttf */; };
+		79DE567E28D7F0B20052C819 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565A28D7F0B20052C819 /* Montserrat-Regular.ttf */; };
+		79DE567F28D7F0B20052C819 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565A28D7F0B20052C819 /* Montserrat-Regular.ttf */; };
+		79DE568028D7F0B20052C819 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565A28D7F0B20052C819 /* Montserrat-Regular.ttf */; };
+		79DE568128D7F0B20052C819 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565B28D7F0B20052C819 /* Montserrat-ExtraBoldItalic.ttf */; };
+		79DE568228D7F0B20052C819 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565B28D7F0B20052C819 /* Montserrat-ExtraBoldItalic.ttf */; };
+		79DE568328D7F0B20052C819 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565B28D7F0B20052C819 /* Montserrat-ExtraBoldItalic.ttf */; };
+		79DE568428D7F0B20052C819 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565C28D7F0B20052C819 /* Montserrat-Bold.ttf */; };
+		79DE568528D7F0B20052C819 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565C28D7F0B20052C819 /* Montserrat-Bold.ttf */; };
+		79DE568628D7F0B20052C819 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565C28D7F0B20052C819 /* Montserrat-Bold.ttf */; };
+		79DE568728D7F0B20052C819 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565D28D7F0B20052C819 /* Montserrat-BlackItalic.ttf */; };
+		79DE568828D7F0B20052C819 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565D28D7F0B20052C819 /* Montserrat-BlackItalic.ttf */; };
+		79DE568928D7F0B20052C819 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565D28D7F0B20052C819 /* Montserrat-BlackItalic.ttf */; };
+		79DE568A28D7F0B20052C819 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565E28D7F0B20052C819 /* Montserrat-SemiBold.ttf */; };
+		79DE568B28D7F0B20052C819 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565E28D7F0B20052C819 /* Montserrat-SemiBold.ttf */; };
+		79DE568C28D7F0B20052C819 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565E28D7F0B20052C819 /* Montserrat-SemiBold.ttf */; };
+		79DE568D28D7F0B20052C819 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565F28D7F0B20052C819 /* Montserrat-Medium.ttf */; };
+		79DE568E28D7F0B20052C819 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565F28D7F0B20052C819 /* Montserrat-Medium.ttf */; };
+		79DE568F28D7F0B20052C819 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE565F28D7F0B20052C819 /* Montserrat-Medium.ttf */; };
+		79DE569028D7F0B20052C819 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE566028D7F0B20052C819 /* Montserrat-Italic.ttf */; };
+		79DE569128D7F0B20052C819 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE566028D7F0B20052C819 /* Montserrat-Italic.ttf */; };
+		79DE569228D7F0B20052C819 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE566028D7F0B20052C819 /* Montserrat-Italic.ttf */; };
+		79DE569328D7F0B20052C819 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE566128D7F0B20052C819 /* Montserrat-LightItalic.ttf */; };
+		79DE569428D7F0B20052C819 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE566128D7F0B20052C819 /* Montserrat-LightItalic.ttf */; };
+		79DE569528D7F0B20052C819 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE566128D7F0B20052C819 /* Montserrat-LightItalic.ttf */; };
+		79DE569628D7F0B20052C819 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE566228D7F0B20052C819 /* Montserrat-MediumItalic.ttf */; };
+		79DE569728D7F0B20052C819 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE566228D7F0B20052C819 /* Montserrat-MediumItalic.ttf */; };
+		79DE569828D7F0B20052C819 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79DE566228D7F0B20052C819 /* Montserrat-MediumItalic.ttf */; };
+		79DE569B28D7F0E50052C819 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE569A28D7F0E50052C819 /* UIFont+Extension.swift */; };
+		79DE569C28D7F0E50052C819 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE569A28D7F0E50052C819 /* UIFont+Extension.swift */; };
+		79DE569D28D7F0E50052C819 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE569A28D7F0E50052C819 /* UIFont+Extension.swift */; };
+		79DE569F28D804450052C819 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE569E28D804450052C819 /* FavoriteButton.swift */; };
+		79DE56A028D804450052C819 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE569E28D804450052C819 /* FavoriteButton.swift */; };
+		79DE56A128D804450052C819 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE569E28D804450052C819 /* FavoriteButton.swift */; };
+		79DE56A328D897BF0052C819 /* MeliIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE56A228D897BF0052C819 /* MeliIndexView.swift */; };
+		79DE56A428D897BF0052C819 /* MeliIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE56A228D897BF0052C819 /* MeliIndexView.swift */; };
+		79DE56A528D897BF0052C819 /* MeliIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE56A228D897BF0052C819 /* MeliIndexView.swift */; };
+		79DE56A728D89C8D0052C819 /* ProductButtonOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE56A628D89C8D0052C819 /* ProductButtonOptionTableViewCell.swift */; };
+		79DE56A828D89C8D0052C819 /* ProductButtonOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE56A628D89C8D0052C819 /* ProductButtonOptionTableViewCell.swift */; };
+		79DE56A928D89C8D0052C819 /* ProductButtonOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE56A628D89C8D0052C819 /* ProductButtonOptionTableViewCell.swift */; };
+		79DE56AB28D8A40C0052C819 /* DescriptionProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE56AA28D8A40C0052C819 /* DescriptionProductTableViewCell.swift */; };
+		79DE56AC28D8A40C0052C819 /* DescriptionProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE56AA28D8A40C0052C819 /* DescriptionProductTableViewCell.swift */; };
+		79DE56AD28D8A40C0052C819 /* DescriptionProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE56AA28D8A40C0052C819 /* DescriptionProductTableViewCell.swift */; };
+		79DE56AF28D8A9BF0052C819 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE56AE28D8A9BF0052C819 /* Favorites.swift */; };
+		79DE56B028D8A9BF0052C819 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE56AE28D8A9BF0052C819 /* Favorites.swift */; };
+		79DE56B128D8A9BF0052C819 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DE56AE28D8A9BF0052C819 /* Favorites.swift */; };
+		9F02BBFEFF0D142EC5AB27A7 /* Pods_Challenge_MeliTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB44B0262B44EE0663CED81C /* Pods_Challenge_MeliTests.framework */; };
+		A07EFDFB84FACC5EC8E9C5A5 /* Pods_Challenge_Meli_Challenge_MeliUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B353A78DCFBB9F00DA54DDD9 /* Pods_Challenge_Meli_Challenge_MeliUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7945311828DC3D2F00EF3462 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79DE55BA28D081FE0052C819 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79DE55C128D081FE0052C819;
+			remoteInfo = "Challenge Meli";
+		};
+		79DE55D928D081FF0052C819 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79DE55BA28D081FE0052C819 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79DE55C128D081FE0052C819;
+			remoteInfo = "Challenge Meli";
+		};
+		79DE55E328D081FF0052C819 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79DE55BA28D081FE0052C819 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79DE55C128D081FE0052C819;
+			remoteInfo = "Challenge Meli";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C659289BA0BA1D362894718 /* Pods-Challenge MeliTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge MeliTests.debug.xcconfig"; path = "Target Support Files/Pods-Challenge MeliTests/Pods-Challenge MeliTests.debug.xcconfig"; sourceTree = "<group>"; };
+		209486490507F2E7E4AE4389 /* Pods_Challenge_Meli.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Challenge_Meli.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4115FC53552305CA27E93FE2 /* Pods-Challenge Meli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge Meli.debug.xcconfig"; path = "Target Support Files/Pods-Challenge Meli/Pods-Challenge Meli.debug.xcconfig"; sourceTree = "<group>"; };
+		5CB1AF73A6636C7DB060D898 /* Pods-Challenge MeliTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge MeliTests.release.xcconfig"; path = "Target Support Files/Pods-Challenge MeliTests/Pods-Challenge MeliTests.release.xcconfig"; sourceTree = "<group>"; };
+		794530E028D9EF3D00EF3462 /* MeliLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliLabel.swift; sourceTree = "<group>"; };
+		794530E228D9FD1E00EF3462 /* MeliButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliButton.swift; sourceTree = "<group>"; };
+		794530E528DB887300EF3462 /* GenericTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableCell.swift; sourceTree = "<group>"; };
+		794530E728DBA44600EF3462 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		7945311428DC3D2F00EF3462 /* ChallengeMeliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeMeliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7945311E28DC3D9D00EF3462 /* MeliTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliTest.swift; sourceTree = "<group>"; };
+		7945312228DC43D000EF3462 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		7945312528DC490F00EF3462 /* AdSelectableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdSelectableTableViewCell.swift; sourceTree = "<group>"; };
+		7945312828DC4A3C00EF3462 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		7945312B28DC4B0200EF3462 /* ProfileOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionTableViewCell.swift; sourceTree = "<group>"; };
+		7945312E28DC4D7C00EF3462 /* ProfileHheaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHheaderView.swift; sourceTree = "<group>"; };
+		7945313128DC50B400EF3462 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		795EF64328DC8CE000617B62 /* StockInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StockInfoTableViewCell.swift; path = "Media cell/StockInfoTableViewCell.swift"; sourceTree = "<group>"; };
+		79DE55C228D081FE0052C819 /* Challenge Meli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Challenge Meli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79DE55C528D081FE0052C819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79DE55C728D081FE0052C819 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		79DE55CE28D081FF0052C819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79DE55D128D081FF0052C819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79DE55D328D081FF0052C819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79DE55D828D081FF0052C819 /* Challenge MeliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Challenge MeliTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79DE55E228D081FF0052C819 /* Challenge MeliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Challenge MeliUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79DE55E628D081FF0052C819 /* Challenge_MeliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge_MeliUITests.swift; sourceTree = "<group>"; };
+		79DE55E828D081FF0052C819 /* Challenge_MeliUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge_MeliUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		79DE55FD28D08A140052C819 /* HomeTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabController.swift; sourceTree = "<group>"; };
+		79DE560128D08A460052C819 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		79DE560528D08A750052C819 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		79DE560828D08DB40052C819 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		79DE560B28D0914B0052C819 /* MyLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationView.swift; sourceTree = "<group>"; };
+		79DE560D28D091CA0052C819 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		79DE561028D097EA0052C819 /* HeaderHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderHomeTableViewCell.swift; sourceTree = "<group>"; };
+		79DE561228D0A2510052C819 /* DetailShippingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailShippingTableViewCell.swift; sourceTree = "<group>"; };
+		79DE561428D0ACD70052C819 /* CategorySuggestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySuggestTableViewCell.swift; sourceTree = "<group>"; };
+		79DE561728D0AE980052C819 /* CategorySuggestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySuggestCollectionViewCell.swift; sourceTree = "<group>"; };
+		79DE561E28D4F2D40052C819 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		79DE562128D4F3830052C819 /* ProductItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemTableViewCell.swift; sourceTree = "<group>"; };
+		79DE562428D7AE010052C819 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		79DE562728D7AEED0052C819 /* HeaderDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		79DE562A28D7B3D70052C819 /* MediaItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		79DE562C28D7B5F50052C819 /* MeliNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliNavigationBar.swift; sourceTree = "<group>"; };
+		79DE562E28D7C5820052C819 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		79DE563028D7C59C0052C819 /* RequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestData.swift; sourceTree = "<group>"; };
+		79DE563228D7C5B20052C819 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		79DE563728D7C6920052C819 /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
+		79DE563928D7C69C0052C819 /* ProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
+		79DE563B28D7C6B50052C819 /* Request+Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Category.swift"; sourceTree = "<group>"; };
+		79DE563D28D7C87B0052C819 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		79DE564028D7CA2C0052C819 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		79DE564228D7D47D0052C819 /* Request+Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Product.swift"; sourceTree = "<group>"; };
+		79DE564428D7D80D0052C819 /* TopProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopProductResponse.swift; sourceTree = "<group>"; };
+		79DE564628D7DCC00052C819 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		79DE564828D7DD2D0052C819 /* MediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
+		79DE564A28D7DD640052C819 /* MultiGetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiGetResponse.swift; sourceTree = "<group>"; };
+		79DE564C28D7E4930052C819 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		79DE564E28D7E67E0052C819 /* MeliTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliTableView.swift; sourceTree = "<group>"; };
+		79DE565128D7F0B20052C819 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		79DE565228D7F0B20052C819 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		79DE565328D7F0B20052C819 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		79DE565428D7F0B20052C819 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		79DE565528D7F0B20052C819 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		79DE565628D7F0B20052C819 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		79DE565728D7F0B20052C819 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		79DE565828D7F0B20052C819 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		79DE565928D7F0B20052C819 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		79DE565A28D7F0B20052C819 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		79DE565B28D7F0B20052C819 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		79DE565C28D7F0B20052C819 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		79DE565D28D7F0B20052C819 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		79DE565E28D7F0B20052C819 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		79DE565F28D7F0B20052C819 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		79DE566028D7F0B20052C819 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		79DE566128D7F0B20052C819 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		79DE566228D7F0B20052C819 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		79DE569928D7F0C80052C819 /* Challenge Meli.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Challenge Meli.entitlements"; sourceTree = "<group>"; };
+		79DE569A28D7F0E50052C819 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		79DE569E28D804450052C819 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		79DE56A228D897BF0052C819 /* MeliIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliIndexView.swift; sourceTree = "<group>"; };
+		79DE56A628D89C8D0052C819 /* ProductButtonOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductButtonOptionTableViewCell.swift; sourceTree = "<group>"; };
+		79DE56AA28D8A40C0052C819 /* DescriptionProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionProductTableViewCell.swift; sourceTree = "<group>"; };
+		79DE56AE28D8A9BF0052C819 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		9295730F24367976CB67BBB6 /* Pods-Challenge Meli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge Meli.release.xcconfig"; path = "Target Support Files/Pods-Challenge Meli/Pods-Challenge Meli.release.xcconfig"; sourceTree = "<group>"; };
+		A093453963122CF1162C4570 /* Pods-Challenge Meli-Challenge MeliUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge Meli-Challenge MeliUITests.debug.xcconfig"; path = "Target Support Files/Pods-Challenge Meli-Challenge MeliUITests/Pods-Challenge Meli-Challenge MeliUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B353A78DCFBB9F00DA54DDD9 /* Pods_Challenge_Meli_Challenge_MeliUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Challenge_Meli_Challenge_MeliUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB44B0262B44EE0663CED81C /* Pods_Challenge_MeliTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Challenge_MeliTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECBE0DF38574ABA2BE4DF7D3 /* Pods-Challenge Meli-Challenge MeliUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge Meli-Challenge MeliUITests.release.xcconfig"; path = "Target Support Files/Pods-Challenge Meli-Challenge MeliUITests/Pods-Challenge Meli-Challenge MeliUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7945311128DC3D2F00EF3462 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79DE55BF28D081FE0052C819 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E41765105066C16D3CAB8C1 /* Pods_Challenge_Meli.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79DE55D528D081FF0052C819 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F02BBFEFF0D142EC5AB27A7 /* Pods_Challenge_MeliTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79DE55DF28D081FF0052C819 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A07EFDFB84FACC5EC8E9C5A5 /* Pods_Challenge_Meli_Challenge_MeliUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7945311528DC3D2F00EF3462 /* ChallengeMeliTests */ = {
+			isa = PBXGroup;
+			children = (
+				7945311E28DC3D9D00EF3462 /* MeliTest.swift */,
+			);
+			path = ChallengeMeliTests;
+			sourceTree = "<group>";
+		};
+		7945312428DC48A200EF3462 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79DE561E28D4F2D40052C819 /* ProductListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7945312728DC4A2C00EF3462 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7945312D28DC4D6B00EF3462 /* View */,
+				7945312A28DC4AEE00EF3462 /* Option cell */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		7945312A28DC4AEE00EF3462 /* Option cell */ = {
+			isa = PBXGroup;
+			children = (
+				7945312B28DC4B0200EF3462 /* ProfileOptionTableViewCell.swift */,
+			);
+			path = "Option cell";
+			sourceTree = "<group>";
+		};
+		7945312D28DC4D6B00EF3462 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7945312828DC4A3C00EF3462 /* ProfileViewController.swift */,
+				7945312E28DC4D7C00EF3462 /* ProfileHheaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7945313028DC509D00EF3462 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7945313128DC50B400EF3462 /* FavoriteViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		79DE55B928D081FE0052C819 = {
+			isa = PBXGroup;
+			children = (
+				79DE55C428D081FE0052C819 /* Challenge Meli */,
+				79DE55E528D081FF0052C819 /* Challenge MeliUITests */,
+				7945311528DC3D2F00EF3462 /* ChallengeMeliTests */,
+				79DE55C328D081FE0052C819 /* Products */,
+				FC8F6BCA6A2BA26488B58940 /* Pods */,
+				EA1DD793BD2ECAAEAA4FDBD0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		79DE55C328D081FE0052C819 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79DE55C228D081FE0052C819 /* Challenge Meli.app */,
+				79DE55D828D081FF0052C819 /* Challenge MeliTests.xctest */,
+				79DE55E228D081FF0052C819 /* Challenge MeliUITests.xctest */,
+				7945311428DC3D2F00EF3462 /* ChallengeMeliTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79DE55C428D081FE0052C819 /* Challenge Meli */ = {
+			isa = PBXGroup;
+			children = (
+				79DE569928D7F0C80052C819 /* Challenge Meli.entitlements */,
+				79DE55F528D084360052C819 /* App */,
+				79DE55C528D081FE0052C819 /* AppDelegate.swift */,
+				79DE55C728D081FE0052C819 /* SceneDelegate.swift */,
+				79DE55CE28D081FF0052C819 /* Assets.xcassets */,
+				79DE55D028D081FF0052C819 /* LaunchScreen.storyboard */,
+				79DE55D328D081FF0052C819 /* Info.plist */,
+			);
+			path = "Challenge Meli";
+			sourceTree = "<group>";
+		};
+		79DE55E528D081FF0052C819 /* Challenge MeliUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79DE55E628D081FF0052C819 /* Challenge_MeliUITests.swift */,
+				79DE55E828D081FF0052C819 /* Challenge_MeliUITestsLaunchTests.swift */,
+			);
+			path = "Challenge MeliUITests";
+			sourceTree = "<group>";
+		};
+		79DE55F528D084360052C819 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				79DE565028D7F09B0052C819 /* Font */,
+				79DE55F728D0843F0052C819 /* Module */,
+				79DE55F628D0843B0052C819 /* Shared */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		79DE55F628D0843B0052C819 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				79DE560A28D0912C0052C819 /* Component */,
+				79DE560328D08A600052C819 /* Extension */,
+				79DE55F928D0845F0052C819 /* Model */,
+				79DE55F828D084450052C819 /* Networking */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		79DE55F728D0843F0052C819 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				79DE562328D7ADEB0052C819 /* Detail item */,
+				79DE561D28D4F2B70052C819 /* List product */,
+				79DE55FA28D085000052C819 /* Home */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		79DE55F828D084450052C819 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				79DE563528D7C5D30052C819 /* Request Type */,
+				79DE563428D7C5CC0052C819 /* Repository */,
+				79DE562E28D7C5820052C819 /* APIManager.swift */,
+				79DE563028D7C59C0052C819 /* RequestData.swift */,
+				79DE563228D7C5B20052C819 /* Request.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		79DE55F928D0845F0052C819 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79DE563D28D7C87B0052C819 /* Category.swift */,
+				79DE564428D7D80D0052C819 /* TopProductResponse.swift */,
+				79DE564628D7DCC00052C819 /* Product.swift */,
+				79DE564828D7DD2D0052C819 /* MediaItem.swift */,
+				79DE564A28D7DD640052C819 /* MultiGetResponse.swift */,
+				79DE56AE28D8A9BF0052C819 /* Favorites.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79DE55FA28D085000052C819 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				79DE55FF28D08A2E0052C819 /* Tabs */,
+				79DE55FD28D08A140052C819 /* HomeTabController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		79DE55FF28D08A2E0052C819 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				7945312728DC4A2C00EF3462 /* Profile */,
+				79DE560728D08DAA0052C819 /* Favorites */,
+				79DE560028D08A340052C819 /* Initial View */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		79DE560028D08A340052C819 /* Initial View */ = {
+			isa = PBXGroup;
+			children = (
+				79DE560F28D097CF0052C819 /* Home Cell */,
+				79DE560128D08A460052C819 /* HomeViewController.swift */,
+			);
+			path = "Initial View";
+			sourceTree = "<group>";
+		};
+		79DE560328D08A600052C819 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				79DE560428D08A640052C819 /* UIColor+Extension */,
+				79DE560D28D091CA0052C819 /* UIView+Extension.swift */,
+				79DE564C28D7E4930052C819 /* UIImageView+Extension.swift */,
+				79DE569A28D7F0E50052C819 /* UIFont+Extension.swift */,
+				794530E528DB887300EF3462 /* GenericTableCell.swift */,
+				794530E728DBA44600EF3462 /* UITableView+Extension.swift */,
+				7945312228DC43D000EF3462 /* UIButton+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		79DE560428D08A640052C819 /* UIColor+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				79DE560528D08A750052C819 /* UIColor+Extension.swift */,
+			);
+			path = "UIColor+Extension";
+			sourceTree = "<group>";
+		};
+		79DE560728D08DAA0052C819 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				7945313028DC509D00EF3462 /* ViewModel */,
+				79DE560828D08DB40052C819 /* FavoritesViewController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		79DE560A28D0912C0052C819 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				79DE560B28D0914B0052C819 /* MyLocationView.swift */,
+				79DE562C28D7B5F50052C819 /* MeliNavigationBar.swift */,
+				79DE564E28D7E67E0052C819 /* MeliTableView.swift */,
+				79DE569E28D804450052C819 /* FavoriteButton.swift */,
+				79DE56A228D897BF0052C819 /* MeliIndexView.swift */,
+				794530E028D9EF3D00EF3462 /* MeliLabel.swift */,
+				794530E228D9FD1E00EF3462 /* MeliButton.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		79DE560F28D097CF0052C819 /* Home Cell */ = {
+			isa = PBXGroup;
+			children = (
+				79DE561628D0AE7A0052C819 /* Category collection cell */,
+				79DE561028D097EA0052C819 /* HeaderHomeTableViewCell.swift */,
+				79DE561228D0A2510052C819 /* DetailShippingTableViewCell.swift */,
+				79DE561428D0ACD70052C819 /* CategorySuggestTableViewCell.swift */,
+				7945312528DC490F00EF3462 /* AdSelectableTableViewCell.swift */,
+			);
+			path = "Home Cell";
+			sourceTree = "<group>";
+		};
+		79DE561628D0AE7A0052C819 /* Category collection cell */ = {
+			isa = PBXGroup;
+			children = (
+				79DE561728D0AE980052C819 /* CategorySuggestCollectionViewCell.swift */,
+			);
+			path = "Category collection cell";
+			sourceTree = "<group>";
+		};
+		79DE561D28D4F2B70052C819 /* List product */ = {
+			isa = PBXGroup;
+			children = (
+				7945312428DC48A200EF3462 /* View */,
+				79DE563F28D7CA0B0052C819 /* ViewModel */,
+				79DE562028D4F3660052C819 /* Product cell */,
+			);
+			path = "List product";
+			sourceTree = "<group>";
+		};
+		79DE562028D4F3660052C819 /* Product cell */ = {
+			isa = PBXGroup;
+			children = (
+				79DE562128D4F3830052C819 /* ProductItemTableViewCell.swift */,
+			);
+			path = "Product cell";
+			sourceTree = "<group>";
+		};
+		79DE562328D7ADEB0052C819 /* Detail item */ = {
+			isa = PBXGroup;
+			children = (
+				79DE562628D7AEDA0052C819 /* Detail cell */,
+				79DE562428D7AE010052C819 /* DetailViewController.swift */,
+			);
+			path = "Detail item";
+			sourceTree = "<group>";
+		};
+		79DE562628D7AEDA0052C819 /* Detail cell */ = {
+			isa = PBXGroup;
+			children = (
+				79DE562928D7B39F0052C819 /* Media cell */,
+				79DE562728D7AEED0052C819 /* HeaderDescriptionTableViewCell.swift */,
+				79DE56A628D89C8D0052C819 /* ProductButtonOptionTableViewCell.swift */,
+				79DE56AA28D8A40C0052C819 /* DescriptionProductTableViewCell.swift */,
+				795EF64328DC8CE000617B62 /* StockInfoTableViewCell.swift */,
+			);
+			path = "Detail cell";
+			sourceTree = "<group>";
+		};
+		79DE562928D7B39F0052C819 /* Media cell */ = {
+			isa = PBXGroup;
+			children = (
+				79DE562A28D7B3D70052C819 /* MediaItemCollectionViewCell.swift */,
+			);
+			path = "Media cell";
+			sourceTree = "<group>";
+		};
+		79DE563428D7C5CC0052C819 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				79DE563728D7C6920052C819 /* CategoryRepository.swift */,
+				79DE563928D7C69C0052C819 /* ProductRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		79DE563528D7C5D30052C819 /* Request Type */ = {
+			isa = PBXGroup;
+			children = (
+				79DE563B28D7C6B50052C819 /* Request+Category.swift */,
+				79DE564228D7D47D0052C819 /* Request+Product.swift */,
+			);
+			path = "Request Type";
+			sourceTree = "<group>";
+		};
+		79DE563F28D7CA0B0052C819 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				79DE564028D7CA2C0052C819 /* ProductListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		79DE565028D7F09B0052C819 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				79DE565528D7F0B20052C819 /* Montserrat-Black.ttf */,
+				79DE565D28D7F0B20052C819 /* Montserrat-BlackItalic.ttf */,
+				79DE565C28D7F0B20052C819 /* Montserrat-Bold.ttf */,
+				79DE565828D7F0B20052C819 /* Montserrat-BoldItalic.ttf */,
+				79DE565128D7F0B20052C819 /* Montserrat-ExtraBold.ttf */,
+				79DE565B28D7F0B20052C819 /* Montserrat-ExtraBoldItalic.ttf */,
+				79DE565628D7F0B20052C819 /* Montserrat-ExtraLight.ttf */,
+				79DE565228D7F0B20052C819 /* Montserrat-ExtraLightItalic.ttf */,
+				79DE566028D7F0B20052C819 /* Montserrat-Italic.ttf */,
+				79DE565728D7F0B20052C819 /* Montserrat-Light.ttf */,
+				79DE566128D7F0B20052C819 /* Montserrat-LightItalic.ttf */,
+				79DE565F28D7F0B20052C819 /* Montserrat-Medium.ttf */,
+				79DE566228D7F0B20052C819 /* Montserrat-MediumItalic.ttf */,
+				79DE565A28D7F0B20052C819 /* Montserrat-Regular.ttf */,
+				79DE565E28D7F0B20052C819 /* Montserrat-SemiBold.ttf */,
+				79DE565328D7F0B20052C819 /* Montserrat-SemiBoldItalic.ttf */,
+				79DE565428D7F0B20052C819 /* Montserrat-Thin.ttf */,
+				79DE565928D7F0B20052C819 /* Montserrat-ThinItalic.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		EA1DD793BD2ECAAEAA4FDBD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				209486490507F2E7E4AE4389 /* Pods_Challenge_Meli.framework */,
+				B353A78DCFBB9F00DA54DDD9 /* Pods_Challenge_Meli_Challenge_MeliUITests.framework */,
+				EB44B0262B44EE0663CED81C /* Pods_Challenge_MeliTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC8F6BCA6A2BA26488B58940 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4115FC53552305CA27E93FE2 /* Pods-Challenge Meli.debug.xcconfig */,
+				9295730F24367976CB67BBB6 /* Pods-Challenge Meli.release.xcconfig */,
+				A093453963122CF1162C4570 /* Pods-Challenge Meli-Challenge MeliUITests.debug.xcconfig */,
+				ECBE0DF38574ABA2BE4DF7D3 /* Pods-Challenge Meli-Challenge MeliUITests.release.xcconfig */,
+				0C659289BA0BA1D362894718 /* Pods-Challenge MeliTests.debug.xcconfig */,
+				5CB1AF73A6636C7DB060D898 /* Pods-Challenge MeliTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7945311328DC3D2F00EF3462 /* ChallengeMeliTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7945311A28DC3D3000EF3462 /* Build configuration list for PBXNativeTarget "ChallengeMeliTests" */;
+			buildPhases = (
+				7945311028DC3D2F00EF3462 /* Sources */,
+				7945311128DC3D2F00EF3462 /* Frameworks */,
+				7945311228DC3D2F00EF3462 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7945311928DC3D2F00EF3462 /* PBXTargetDependency */,
+			);
+			name = ChallengeMeliTests;
+			productName = ChallengeMeliTests;
+			productReference = 7945311428DC3D2F00EF3462 /* ChallengeMeliTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79DE55C128D081FE0052C819 /* Challenge Meli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79DE55EC28D081FF0052C819 /* Build configuration list for PBXNativeTarget "Challenge Meli" */;
+			buildPhases = (
+				C9F55DECFFFB6DD5751B9003 /* [CP] Check Pods Manifest.lock */,
+				79DE55BE28D081FE0052C819 /* Sources */,
+				79DE55BF28D081FE0052C819 /* Frameworks */,
+				79DE55C028D081FE0052C819 /* Resources */,
+				F394B1E663AFF2C116131DB9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Challenge Meli";
+			productName = "Challenge Meli";
+			productReference = 79DE55C228D081FE0052C819 /* Challenge Meli.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79DE55D728D081FF0052C819 /* Challenge MeliTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79DE55EF28D081FF0052C819 /* Build configuration list for PBXNativeTarget "Challenge MeliTests" */;
+			buildPhases = (
+				6E4B79F3222B9C2B32D55F24 /* [CP] Check Pods Manifest.lock */,
+				79DE55D428D081FF0052C819 /* Sources */,
+				79DE55D528D081FF0052C819 /* Frameworks */,
+				79DE55D628D081FF0052C819 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79DE55DA28D081FF0052C819 /* PBXTargetDependency */,
+			);
+			name = "Challenge MeliTests";
+			productName = "Challenge MeliTests";
+			productReference = 79DE55D828D081FF0052C819 /* Challenge MeliTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79DE55E128D081FF0052C819 /* Challenge MeliUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79DE55F228D081FF0052C819 /* Build configuration list for PBXNativeTarget "Challenge MeliUITests" */;
+			buildPhases = (
+				DAA5EA62FE5422427DDBEA37 /* [CP] Check Pods Manifest.lock */,
+				79DE55DE28D081FF0052C819 /* Sources */,
+				79DE55DF28D081FF0052C819 /* Frameworks */,
+				79DE55E028D081FF0052C819 /* Resources */,
+				727FE3420EE61B5E1BE74CED /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79DE55E428D081FF0052C819 /* PBXTargetDependency */,
+			);
+			name = "Challenge MeliUITests";
+			productName = "Challenge MeliUITests";
+			productReference = 79DE55E228D081FF0052C819 /* Challenge MeliUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79DE55BA28D081FE0052C819 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					7945311328DC3D2F00EF3462 = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
+						TestTargetID = 79DE55C128D081FE0052C819;
+					};
+					79DE55C128D081FE0052C819 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					79DE55D728D081FF0052C819 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 79DE55C128D081FE0052C819;
+					};
+					79DE55E128D081FF0052C819 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 79DE55C128D081FE0052C819;
+					};
+				};
+			};
+			buildConfigurationList = 79DE55BD28D081FE0052C819 /* Build configuration list for PBXProject "Challenge Meli" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79DE55B928D081FE0052C819;
+			productRefGroup = 79DE55C328D081FE0052C819 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79DE55C128D081FE0052C819 /* Challenge Meli */,
+				79DE55D728D081FF0052C819 /* Challenge MeliTests */,
+				79DE55E128D081FF0052C819 /* Challenge MeliUITests */,
+				7945311328DC3D2F00EF3462 /* ChallengeMeliTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7945311228DC3D2F00EF3462 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79DE55C028D081FE0052C819 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79DE567E28D7F0B20052C819 /* Montserrat-Regular.ttf in Resources */,
+				79DE55D228D081FF0052C819 /* LaunchScreen.storyboard in Resources */,
+				79DE566F28D7F0B20052C819 /* Montserrat-Black.ttf in Resources */,
+				79DE568728D7F0B20052C819 /* Montserrat-BlackItalic.ttf in Resources */,
+				79DE568D28D7F0B20052C819 /* Montserrat-Medium.ttf in Resources */,
+				79DE566628D7F0B20052C819 /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				79DE567528D7F0B20052C819 /* Montserrat-Light.ttf in Resources */,
+				79DE566328D7F0B20052C819 /* Montserrat-ExtraBold.ttf in Resources */,
+				79DE568428D7F0B20052C819 /* Montserrat-Bold.ttf in Resources */,
+				79DE567B28D7F0B20052C819 /* Montserrat-ThinItalic.ttf in Resources */,
+				79DE569628D7F0B20052C819 /* Montserrat-MediumItalic.ttf in Resources */,
+				79DE566928D7F0B20052C819 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				79DE567228D7F0B20052C819 /* Montserrat-ExtraLight.ttf in Resources */,
+				79DE566C28D7F0B20052C819 /* Montserrat-Thin.ttf in Resources */,
+				79DE567828D7F0B20052C819 /* Montserrat-BoldItalic.ttf in Resources */,
+				79DE569328D7F0B20052C819 /* Montserrat-LightItalic.ttf in Resources */,
+				79DE55CF28D081FF0052C819 /* Assets.xcassets in Resources */,
+				79DE569028D7F0B20052C819 /* Montserrat-Italic.ttf in Resources */,
+				79DE568A28D7F0B20052C819 /* Montserrat-SemiBold.ttf in Resources */,
+				79DE568128D7F0B20052C819 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79DE55D628D081FF0052C819 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79DE567928D7F0B20052C819 /* Montserrat-BoldItalic.ttf in Resources */,
+				79DE568E28D7F0B20052C819 /* Montserrat-Medium.ttf in Resources */,
+				79DE567628D7F0B20052C819 /* Montserrat-Light.ttf in Resources */,
+				79DE569128D7F0B20052C819 /* Montserrat-Italic.ttf in Resources */,
+				79DE569728D7F0B20052C819 /* Montserrat-MediumItalic.ttf in Resources */,
+				79DE566A28D7F0B20052C819 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				79DE567328D7F0B20052C819 /* Montserrat-ExtraLight.ttf in Resources */,
+				79DE567028D7F0B20052C819 /* Montserrat-Black.ttf in Resources */,
+				79DE567C28D7F0B20052C819 /* Montserrat-ThinItalic.ttf in Resources */,
+				79DE566428D7F0B20052C819 /* Montserrat-ExtraBold.ttf in Resources */,
+				79DE566D28D7F0B20052C819 /* Montserrat-Thin.ttf in Resources */,
+				79DE568528D7F0B20052C819 /* Montserrat-Bold.ttf in Resources */,
+				79DE568828D7F0B20052C819 /* Montserrat-BlackItalic.ttf in Resources */,
+				79DE568B28D7F0B20052C819 /* Montserrat-SemiBold.ttf in Resources */,
+				79DE569428D7F0B20052C819 /* Montserrat-LightItalic.ttf in Resources */,
+				79DE567F28D7F0B20052C819 /* Montserrat-Regular.ttf in Resources */,
+				79DE566728D7F0B20052C819 /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				79DE568228D7F0B20052C819 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79DE55E028D081FF0052C819 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79DE567A28D7F0B20052C819 /* Montserrat-BoldItalic.ttf in Resources */,
+				79DE568F28D7F0B20052C819 /* Montserrat-Medium.ttf in Resources */,
+				79DE567728D7F0B20052C819 /* Montserrat-Light.ttf in Resources */,
+				79DE569228D7F0B20052C819 /* Montserrat-Italic.ttf in Resources */,
+				79DE569828D7F0B20052C819 /* Montserrat-MediumItalic.ttf in Resources */,
+				79DE566B28D7F0B20052C819 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				79DE567428D7F0B20052C819 /* Montserrat-ExtraLight.ttf in Resources */,
+				79DE567128D7F0B20052C819 /* Montserrat-Black.ttf in Resources */,
+				79DE567D28D7F0B20052C819 /* Montserrat-ThinItalic.ttf in Resources */,
+				79DE566528D7F0B20052C819 /* Montserrat-ExtraBold.ttf in Resources */,
+				79DE566E28D7F0B20052C819 /* Montserrat-Thin.ttf in Resources */,
+				79DE568628D7F0B20052C819 /* Montserrat-Bold.ttf in Resources */,
+				79DE568928D7F0B20052C819 /* Montserrat-BlackItalic.ttf in Resources */,
+				79DE568C28D7F0B20052C819 /* Montserrat-SemiBold.ttf in Resources */,
+				79DE569528D7F0B20052C819 /* Montserrat-LightItalic.ttf in Resources */,
+				79DE568028D7F0B20052C819 /* Montserrat-Regular.ttf in Resources */,
+				79DE566828D7F0B20052C819 /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				79DE568328D7F0B20052C819 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E4B79F3222B9C2B32D55F24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Challenge MeliTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		727FE3420EE61B5E1BE74CED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Challenge Meli-Challenge MeliUITests/Pods-Challenge Meli-Challenge MeliUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Challenge Meli-Challenge MeliUITests/Pods-Challenge Meli-Challenge MeliUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Challenge Meli-Challenge MeliUITests/Pods-Challenge Meli-Challenge MeliUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9F55DECFFFB6DD5751B9003 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Challenge Meli-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAA5EA62FE5422427DDBEA37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Challenge Meli-Challenge MeliUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F394B1E663AFF2C116131DB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Challenge Meli/Pods-Challenge Meli-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Challenge Meli/Pods-Challenge Meli-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Challenge Meli/Pods-Challenge Meli-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7945311028DC3D2F00EF3462 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7945312028DC3DC900EF3462 /* HomeTabController.swift in Sources */,
+				7945312128DC3DD900EF3462 /* MeliNavigationBar.swift in Sources */,
+				7945311F28DC3D9D00EF3462 /* MeliTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79DE55BE28D081FE0052C819 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79DE56AB28D8A40C0052C819 /* DescriptionProductTableViewCell.swift in Sources */,
+				794530E828DBA44600EF3462 /* UITableView+Extension.swift in Sources */,
+				79DE563128D7C59C0052C819 /* RequestData.swift in Sources */,
+				79DE562528D7AE010052C819 /* DetailViewController.swift in Sources */,
+				79DE562D28D7B5F50052C819 /* MeliNavigationBar.swift in Sources */,
+				7945312928DC4A3C00EF3462 /* ProfileViewController.swift in Sources */,
+				79DE561328D0A2510052C819 /* DetailShippingTableViewCell.swift in Sources */,
+				79DE561828D0AE980052C819 /* CategorySuggestCollectionViewCell.swift in Sources */,
+				79DE569B28D7F0E50052C819 /* UIFont+Extension.swift in Sources */,
+				79DE564328D7D47D0052C819 /* Request+Product.swift in Sources */,
+				79DE562F28D7C5820052C819 /* APIManager.swift in Sources */,
+				79DE563328D7C5B20052C819 /* Request.swift in Sources */,
+				79DE563828D7C6920052C819 /* CategoryRepository.swift in Sources */,
+				7945312628DC490F00EF3462 /* AdSelectableTableViewCell.swift in Sources */,
+				79DE564128D7CA2C0052C819 /* ProductListViewModel.swift in Sources */,
+				79DE564528D7D80D0052C819 /* TopProductResponse.swift in Sources */,
+				794530E328D9FD1E00EF3462 /* MeliButton.swift in Sources */,
+				79DE55C628D081FE0052C819 /* AppDelegate.swift in Sources */,
+				79DE563A28D7C69C0052C819 /* ProductRepository.swift in Sources */,
+				79DE560C28D0914B0052C819 /* MyLocationView.swift in Sources */,
+				79DE560E28D091CA0052C819 /* UIView+Extension.swift in Sources */,
+				7945312328DC43D000EF3462 /* UIButton+Extension.swift in Sources */,
+				79DE564B28D7DD640052C819 /* MultiGetResponse.swift in Sources */,
+				79DE561F28D4F2D40052C819 /* ProductListViewController.swift in Sources */,
+				79DE56A328D897BF0052C819 /* MeliIndexView.swift in Sources */,
+				79DE55FE28D08A140052C819 /* HomeTabController.swift in Sources */,
+				79DE55C828D081FE0052C819 /* SceneDelegate.swift in Sources */,
+				79DE562B28D7B3D70052C819 /* MediaItemCollectionViewCell.swift in Sources */,
+				7945313228DC50B400EF3462 /* FavoriteViewModel.swift in Sources */,
+				79DE561528D0ACD70052C819 /* CategorySuggestTableViewCell.swift in Sources */,
+				795EF64428DC8CE000617B62 /* StockInfoTableViewCell.swift in Sources */,
+				79DE560228D08A460052C819 /* HomeViewController.swift in Sources */,
+				79DE562828D7AEED0052C819 /* HeaderDescriptionTableViewCell.swift in Sources */,
+				79DE563C28D7C6B50052C819 /* Request+Category.swift in Sources */,
+				7945312F28DC4D7C00EF3462 /* ProfileHheaderView.swift in Sources */,
+				79DE564928D7DD2D0052C819 /* MediaItem.swift in Sources */,
+				79DE562228D4F3830052C819 /* ProductItemTableViewCell.swift in Sources */,
+				79DE564728D7DCC00052C819 /* Product.swift in Sources */,
+				79DE563E28D7C87B0052C819 /* Category.swift in Sources */,
+				79DE569F28D804450052C819 /* FavoriteButton.swift in Sources */,
+				79DE560928D08DB40052C819 /* FavoritesViewController.swift in Sources */,
+				79DE560628D08A750052C819 /* UIColor+Extension.swift in Sources */,
+				79DE56AF28D8A9BF0052C819 /* Favorites.swift in Sources */,
+				794530E628DB887300EF3462 /* GenericTableCell.swift in Sources */,
+				79DE564D28D7E4930052C819 /* UIImageView+Extension.swift in Sources */,
+				7945312C28DC4B0200EF3462 /* ProfileOptionTableViewCell.swift in Sources */,
+				79DE56A728D89C8D0052C819 /* ProductButtonOptionTableViewCell.swift in Sources */,
+				794530E128D9EF3D00EF3462 /* MeliLabel.swift in Sources */,
+				79DE561128D097EA0052C819 /* HeaderHomeTableViewCell.swift in Sources */,
+				79DE564F28D7E67E0052C819 /* MeliTableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79DE55D428D081FF0052C819 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794530F628DC3A3500EF3462 /* Product.swift in Sources */,
+				7945310D28DC3C9800EF3462 /* CategorySuggestCollectionViewCell.swift in Sources */,
+				79DE56A828D89C8D0052C819 /* ProductButtonOptionTableViewCell.swift in Sources */,
+				7945310A28DC3C8F00EF3462 /* HeaderHomeTableViewCell.swift in Sources */,
+				794530E928DC39D700EF3462 /* MyLocationView.swift in Sources */,
+				79DE56A428D897BF0052C819 /* MeliIndexView.swift in Sources */,
+				7945310E28DC3CAB00EF3462 /* FavoritesViewController.swift in Sources */,
+				794530F028DC3A0D00EF3462 /* MeliLabel.swift in Sources */,
+				7945310628DC3C6700EF3462 /* HomeViewController.swift in Sources */,
+				794530EA28DC39F000EF3462 /* UIView+Extension.swift in Sources */,
+				79DE56AC28D8A40C0052C819 /* DescriptionProductTableViewCell.swift in Sources */,
+				794530FF28DC3C0600EF3462 /* MultiGetResponse.swift in Sources */,
+				794530FD28DC3BFE00EF3462 /* RequestData.swift in Sources */,
+				7945310728DC3C6900EF3462 /* HomeTabController.swift in Sources */,
+				794530F528DC3A3200EF3462 /* TopProductResponse.swift in Sources */,
+				79DE56A028D804450052C819 /* FavoriteButton.swift in Sources */,
+				79DE56B028D8A9BF0052C819 /* Favorites.swift in Sources */,
+				7945310528DC3C6200EF3462 /* ProductItemTableViewCell.swift in Sources */,
+				794530F128DC3A1500EF3462 /* MeliTableView.swift in Sources */,
+				794530FB28DC3BF900EF3462 /* ProductRepository.swift in Sources */,
+				7945310228DC3C2F00EF3462 /* ProductListViewModel.swift in Sources */,
+				7945310B28DC3C9200EF3462 /* DetailShippingTableViewCell.swift in Sources */,
+				794530EC28DC39FB00EF3462 /* UIImageView+Extension.swift in Sources */,
+				79DE569C28D7F0E50052C819 /* UIFont+Extension.swift in Sources */,
+				794530F428DC3A2F00EF3462 /* Category.swift in Sources */,
+				794530FE28DC3C0100EF3462 /* Request.swift in Sources */,
+				794530FA28DC3BF600EF3462 /* CategoryRepository.swift in Sources */,
+				794530EF28DC3A0700EF3462 /* MeliButton.swift in Sources */,
+				794530ED28DC3A0000EF3462 /* GenericTableCell.swift in Sources */,
+				7945310028DC3C1D00EF3462 /* MediaItemCollectionViewCell.swift in Sources */,
+				794530F728DC3AC100EF3462 /* MediaItem.swift in Sources */,
+				794530EB28DC39F300EF3462 /* UIColor+Extension.swift in Sources */,
+				794530EE28DC3A0300EF3462 /* UITableView+Extension.swift in Sources */,
+				7945310C28DC3C9400EF3462 /* CategorySuggestTableViewCell.swift in Sources */,
+				794530FC28DC3BFB00EF3462 /* APIManager.swift in Sources */,
+				7945310128DC3C2C00EF3462 /* DetailViewController.swift in Sources */,
+				794530F828DC3BF000EF3462 /* Request+Category.swift in Sources */,
+				794530F928DC3BF300EF3462 /* Request+Product.swift in Sources */,
+				7945310428DC3C6000EF3462 /* ProductListViewController.swift in Sources */,
+				7945310328DC3C5200EF3462 /* HeaderDescriptionTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79DE55DE28D081FF0052C819 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79DE56A928D89C8D0052C819 /* ProductButtonOptionTableViewCell.swift in Sources */,
+				794530F328DC3A1A00EF3462 /* MyLocationView.swift in Sources */,
+				79DE56A528D897BF0052C819 /* MeliIndexView.swift in Sources */,
+				794530F228DC3A1600EF3462 /* MeliTableView.swift in Sources */,
+				79DE569D28D7F0E50052C819 /* UIFont+Extension.swift in Sources */,
+				79DE55E728D081FF0052C819 /* Challenge_MeliUITests.swift in Sources */,
+				79DE55E928D081FF0052C819 /* Challenge_MeliUITestsLaunchTests.swift in Sources */,
+				79DE56B128D8A9BF0052C819 /* Favorites.swift in Sources */,
+				79DE56AD28D8A40C0052C819 /* DescriptionProductTableViewCell.swift in Sources */,
+				79DE56A128D804450052C819 /* FavoriteButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7945311928DC3D2F00EF3462 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79DE55C128D081FE0052C819 /* Challenge Meli */;
+			targetProxy = 7945311828DC3D2F00EF3462 /* PBXContainerItemProxy */;
+		};
+		79DE55DA28D081FF0052C819 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79DE55C128D081FE0052C819 /* Challenge Meli */;
+			targetProxy = 79DE55D928D081FF0052C819 /* PBXContainerItemProxy */;
+		};
+		79DE55E428D081FF0052C819 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79DE55C128D081FE0052C819 /* Challenge Meli */;
+			targetProxy = 79DE55E328D081FF0052C819 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79DE55D028D081FF0052C819 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79DE55D128D081FF0052C819 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7945311B28DC3D3000EF3462 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = facundo.ChallengeMeliTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Challenge Meli.app/Challenge Meli";
+			};
+			name = Debug;
+		};
+		7945311C28DC3D3000EF3462 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = facundo.ChallengeMeliTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Challenge Meli.app/Challenge Meli";
+			};
+			name = Release;
+		};
+		79DE55EA28D081FF0052C819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79DE55EB28D081FF0052C819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79DE55ED28D081FF0052C819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4115FC53552305CA27E93FE2 /* Pods-Challenge Meli.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Challenge Meli/Challenge Meli.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Challenge Meli/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "facundo.Challenge-Meli";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79DE55EE28D081FF0052C819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9295730F24367976CB67BBB6 /* Pods-Challenge Meli.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Challenge Meli/Challenge Meli.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Challenge Meli/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "facundo.Challenge-Meli";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79DE55F028D081FF0052C819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C659289BA0BA1D362894718 /* Pods-Challenge MeliTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LL552HT4A5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "facundo.Challenge-MeliTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Challenge Meli.app/Challenge Meli";
+			};
+			name = Debug;
+		};
+		79DE55F128D081FF0052C819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CB1AF73A6636C7DB060D898 /* Pods-Challenge MeliTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LL552HT4A5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "facundo.Challenge-MeliTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Challenge Meli.app/Challenge Meli";
+			};
+			name = Release;
+		};
+		79DE55F328D081FF0052C819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A093453963122CF1162C4570 /* Pods-Challenge Meli-Challenge MeliUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "facundo.Challenge-MeliUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Challenge Meli";
+			};
+			name = Debug;
+		};
+		79DE55F428D081FF0052C819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECBE0DF38574ABA2BE4DF7D3 /* Pods-Challenge Meli-Challenge MeliUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "facundo.Challenge-MeliUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Challenge Meli";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7945311A28DC3D3000EF3462 /* Build configuration list for PBXNativeTarget "ChallengeMeliTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7945311B28DC3D3000EF3462 /* Debug */,
+				7945311C28DC3D3000EF3462 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79DE55BD28D081FE0052C819 /* Build configuration list for PBXProject "Challenge Meli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79DE55EA28D081FF0052C819 /* Debug */,
+				79DE55EB28D081FF0052C819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79DE55EC28D081FF0052C819 /* Build configuration list for PBXNativeTarget "Challenge Meli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79DE55ED28D081FF0052C819 /* Debug */,
+				79DE55EE28D081FF0052C819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79DE55EF28D081FF0052C819 /* Build configuration list for PBXNativeTarget "Challenge MeliTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79DE55F028D081FF0052C819 /* Debug */,
+				79DE55F128D081FF0052C819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79DE55F228D081FF0052C819 /* Build configuration list for PBXNativeTarget "Challenge MeliUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79DE55F328D081FF0052C819 /* Debug */,
+				79DE55F428D081FF0052C819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79DE55BA28D081FE0052C819 /* Project object */;
+}
